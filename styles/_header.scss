@@ -1,0 +1,73 @@
+@import './globals';
+@import './functions';
+header{
+    height: 300px;
+    background: url('../../images/bg-desktop-dark.jpg');
+    background-color: $checkBackground;
+    // padding: 0 5rem;
+    @include flexJustify(none,center,column);
+
+    .header-content{
+        width: $width;
+        margin: auto;
+        nav{
+            @include flexJustify(space-between,center,row);
+            h1{
+                color: #fff;
+                font-size: 2em;
+                letter-spacing: 0.6em;
+            }
+            button{
+                border: none;
+                outline: none;
+                background: transparent;
+            }
+        }
+        form{
+            margin-top: 30px;
+            width: 100%;
+            background-color: $veryDarkDesaturatedBlue;
+            padding: 15px;
+            border-radius: 3px;
+            @include flexJustify(none,center,row);
+
+            .check-box{
+                width: 20px;
+                height: 20px;
+                background: transparent;
+                border: 1px $darkGrayishBlue solid;
+                border-radius: 50%;
+            }
+            input{
+                
+                margin-left: 15px;
+                width: 100%;
+                background: transparent;
+                border: none;
+                outline: none;
+                font-size: 0.9em;
+                color: $darkGrayishBlue;
+                &:focus{
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                }
+                &::placeholder{
+                    background: transparent;
+                }
+                &:checked{
+                    background: transparent;
+                }
+                &:-webkit-autofill,
+                &:-webkit-autofill:hover, 
+                &:-webkit-autofill:focus, 
+                &:-webkit-autofill:active  {
+                    -webkit-box-shadow: 0 0 0 30px $veryDarkDesaturatedBlue inset !important;
+                }
+                &:-webkit-autofill {
+                    -webkit-text-fill-color: $darkGrayishBlue!important;
+                }
+            }
+        }
+    }
+}
