@@ -12,3 +12,48 @@ body{
     height: 100vh;
     overflow-y: hidden;
 }
+
+#toggleTheme{
+    cursor: pointer;
+}
+
+.light{
+    header{
+        background: url('../../images/bg-desktop-light.jpg');
+        background-color: $checkBackground;
+        .header-content{
+            form{
+                background: $veryLightGray;
+                input{
+                    color: $veryDarkBlue;
+                    
+                    &:-webkit-autofill,
+                    &:-webkit-autofill:hover, 
+                    &:-webkit-autofill:focus, 
+                    &:-webkit-autofill:active  {
+                        -webkit-box-shadow: 0 0 0 30px $veryDarkDesaturatedBlue inset !important;
+                    }
+                    &:-webkit-autofill {
+                        -webkit-text-fill-color: $veryDarkBlue !important;
+                    }
+                }
+            }
+        }
+    }
+    section{
+        background-color: $veryLightGrayishBlue;
+        .showcase{
+            background: $veryLightGray;
+            .todos{
+                .todo{
+                    color: $veryDarkDesaturatedBlue;
+                    .todo__title{
+                        .todo__complete{
+                            color: $lightGrayishBlue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

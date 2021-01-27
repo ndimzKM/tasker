@@ -207,10 +207,6 @@ section .showcase .todos .todo .todo__title .check-box:hover {
   border-color: #e4e5f1;
 }
 
-section .showcase .todos .todo .todo__title .check_active {
-  background-color: red;
-}
-
 section .showcase .todos .todo .todo__title .checked-true {
   background: -webkit-gradient(linear, left top, right top, from(#57ddff), to(#c058f3));
   background: linear-gradient(to right, #57ddff, #c058f3);
@@ -289,5 +285,46 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   height: 100vh;
   overflow-y: hidden;
+}
+
+#toggleTheme {
+  cursor: pointer;
+}
+
+.light header {
+  background: url("../../images/bg-desktop-light.jpg");
+  background-color: linear-gradient(to right, #57ddff, #c058f3);
+}
+
+.light header .header-content form {
+  background: #fafafa;
+}
+
+.light header .header-content form input {
+  color: #161722;
+}
+
+.light header .header-content form input:-webkit-autofill, .light header .header-content form input:-webkit-autofill:hover, .light header .header-content form input:-webkit-autofill:focus, .light header .header-content form input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #25273c inset !important;
+}
+
+.light header .header-content form input:-webkit-autofill {
+  -webkit-text-fill-color: #161722 !important;
+}
+
+.light section {
+  background-color: #e4e5f1;
+}
+
+.light section .showcase {
+  background: #fafafa;
+}
+
+.light section .showcase .todos .todo {
+  color: #25273c;
+}
+
+.light section .showcase .todos .todo .todo__title .todo__complete {
+  color: #cacde8;
 }
 /*# sourceMappingURL=index.css.map */
