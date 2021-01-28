@@ -1,5 +1,5 @@
 # Tasker
-A todo list add bullt using vanilla JavaScript and SCSS
+A todo list app bullt using vanilla JavaScript and SCSS
 Completely responsive and supports __light__ and __dark themes__
 
 ## Note
